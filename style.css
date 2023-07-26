@@ -1,0 +1,90 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    font-family: 'Roboto','Quicksand', sans-serif;
+}
+
+/* SIDEBAR */
+.aside {
+    background-color: rgb(32, 65, 172);
+    color: white;
+    flex: 0 0 280px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+.title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5%;
+}
+
+nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.aside > * > div {
+    display: flex;
+    gap: 5%;
+    font-size: 12px;
+    padding-left: 2%;
+}
+/* SIDEBAR */
+
+
+.right-side {
+    background-color: bisque;
+    flex: 1;
+}
+
+/* HEADER */
+header {
+    background-color: aquamarine;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-top {
+    flex: 1;
+}
+
+.header-bottom {
+    flex: 1;
+}
+
+
+
+
+/* HEADER */
+
+
+
+
+/* .projects {
+    grid-area: projects;
+    background-color: brown;
+}
+
+.announcements {
+    grid-area: announcements;
+    background-color: bisque;
+}
+
+.trending {
+    grid-area: trending;
+    background-color: burlywood;
+} */
+
+/* .content{
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+} */
