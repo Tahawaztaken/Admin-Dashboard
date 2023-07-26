@@ -2,7 +2,7 @@ body {
     height: 100vh;
     margin: 0;
     display: flex;
-    font-family: 'Roboto','Quicksand', sans-serif;
+    font-family: 'Roboto', 'Quicksand', sans-serif;
 }
 
 /* SIDEBAR */
@@ -43,21 +43,132 @@ nav {
 
 /* HEADER */
 header {
-    background-color: aquamarine;
+    background-color: white;
     height: 200px;
     display: flex;
     flex-direction: column;
+    padding: 0 48px;
 
 }
 
 .header-top {
     flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left-side {
+    display: flex;
+    flex: 1;
+    margin-right: 20%;
+}
+
+.search-container {
+    display: flex;
+    flex: 1;
+    margin-left: 3%; 
+}
+
+#searchbar {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: rgb(235, 232, 232);
+}
+
+#searchbar {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1; 
+}
+
+#searchbar::placeholder {
+    color: transparent
+}
+
+#searchbar:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #66afe9;
+}
+
+  
+.header-right-side{
+    display: flex;
+    gap: 20px;
+}
+.header-right-side p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .header-bottom {
+    display: flex;
     flex: 1;
 }
 
+.bottom-left-side {
+    display: flex;
+    flex: 1 0 250px;
+}
+
+.bottom-left-side img {
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.bottom-left-side > div > p:nth-child(1) {
+    font-size: 15px;
+    margin: 0;
+    margin-top: 15px ;
+    font-weight: bolder;
+}
+
+.bottom-left-side > div > p:nth-child(2) {
+    font-size: 25px;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: bolder;
+}
+
+.bottom-right-side {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+/* Apply styles to all buttons inside .bottom-right-side */
+.bottom-right-side button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(48, 36, 214);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* External box shadow */
+}
+
+/* Apply styles on hover */
+.bottom-right-side button:hover {
+    background-color: rgb(38, 26, 204);
+}
+
+/* Apply styles on focus (when the button is active) */
+.bottom-right-side button:focus {
+    box-shadow: none; /* Remove the default outline on focus */
+}
+
+/* Apply styles on click */
+.bottom-right-side button:active {
+    transform: translateY(2px); /* Add a subtle click effect by shifting the button down */
+}
 
 
 
