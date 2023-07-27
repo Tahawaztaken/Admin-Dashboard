@@ -39,6 +39,9 @@ nav {
 .right-side {
     background-color: bisque;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* HEADER */
@@ -140,7 +143,7 @@ header {
     align-items: center;
     gap: 20px;
 }
-/* Apply styles to all buttons inside .bottom-right-side */
+
 .bottom-right-side button {
     padding: 10px 25px;
     border: none;
@@ -152,50 +155,77 @@ header {
     outline: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* External box shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-/* Apply styles on hover */
 .bottom-right-side button:hover {
     background-color: rgb(38, 26, 204);
 }
 
-/* Apply styles on focus (when the button is active) */
 .bottom-right-side button:focus {
-    box-shadow: none; /* Remove the default outline on focus */
+    box-shadow: none; 
 }
 
-/* Apply styles on click */
 .bottom-right-side button:active {
-    transform: translateY(2px); /* Add a subtle click effect by shifting the button down */
+    transform: translateY(2px);
 }
-
-
-
 /* HEADER */
 
-
-
-
-/* .projects {
+/* CONTENT */
+.projects {
     grid-area: projects;
-    background-color: brown;
+    background-color: aqua;
 }
 
 .announcements {
     grid-area: announcements;
-    background-color: bisque;
+    background-color: rgb(134, 95, 36);
 }
 
 .trending {
     grid-area: trending;
-    background-color: burlywood;
-} */
+    background-color: blue;
+}
 
-/* .content{
+.content {
+    flex: 1 0 auto;
+    height: 80%;
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
     grid-template-areas: 
-        "projects announcements"
-        "projects trending";
-} */
+    "projects announcements"
+    "projects trending";
+}
+
+.projects {
+    display: grid;
+    overflow: auto;
+    grid-template: 1fr 1fr / repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+}
+
+.projects::-webkit-scrollbar {
+    display: none;
+}
+.projects {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px;
+    background-color: white;
+    height: 200px;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: end;
+}
+/* CONTENT */
+
