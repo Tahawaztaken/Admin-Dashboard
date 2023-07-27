@@ -182,7 +182,7 @@ header {
 
 .trending {
     grid-area: trending;
-    background-color: blue;
+
 }
 
 .content {
@@ -290,7 +290,36 @@ header {
     border-bottom: 0px;
 }
 
+.trending-header-wrap h2 {
+    margin: 10px 0px 10px 15px;
+    font-size: 20px;
+}
 
+
+.trending-card {
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    border-radius: 7px;
+    margin: 0px 20px 0px 5px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    grid-auto-rows: 1fr;
+    font-size: 12px;
+    padding: 20px;
+}
+.trending-user h5 {
+    font-size: 15px;
+    margin: 10px 0 5px 10px;
+}
+.trending-card p {
+    margin: 0 0 0 10px;
+}
+
+.trending-user {
+    display: flex;
+
+}
 
 /* CONTENT */
 
