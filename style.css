@@ -11,7 +11,7 @@ body {
 
 /* SIDEBAR */
 .aside {
-    background-color: rgb(32, 65, 172);
+    background-color: #0c133b;
     color: white;
     flex: 1 0 auto;
     padding-left: 20px;
@@ -48,7 +48,6 @@ nav {
 
 
 .right-side {
-    background-color: bisque;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -57,7 +56,7 @@ nav {
 
 /* HEADER */
 header {
-    background-color: white;
+    background-color: #ebf4f1;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -104,7 +103,7 @@ header {
 }
 
 #searchbar:focus {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #32d3e7;
     border-color: #66afe9;
 }
 
@@ -159,7 +158,7 @@ header {
     padding: 10px 25px;
     border: none;
     border-radius: 25px;
-    background-color: rgb(48, 36, 214);
+    background-color: #0c133b;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -170,7 +169,7 @@ header {
 }
 
 .bottom-right-side button:hover {
-    background-color: rgb(38, 26, 204);
+    background-color: #32d3e7;
 }
 
 .bottom-right-side button:focus {
@@ -197,7 +196,7 @@ header {
 }
 
 .content {
-    background-color: rgb(211, 224, 224);
+    background-color: #d1e0db;
     flex: 1 1 auto;
     display: grid;
     overflow: auto;
@@ -250,7 +249,7 @@ header {
     min-width: 300px;
     max-width: 600px;
     border-radius: 7px;
-    border-inline-start: 10px solid rgb(39, 177, 187);
+    border-inline-start: 10px solid #32d3e7;
 }
 
 .card > * {
