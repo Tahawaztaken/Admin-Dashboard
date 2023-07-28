@@ -1,7 +1,11 @@
+html {
+    height: 100%;
+}
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     display: flex;
+    overflow-y: hidden;
     font-family: 'Roboto', 'Quicksand', sans-serif;
 }
 
@@ -9,9 +13,16 @@ body {
 .aside {
     background-color: rgb(32, 65, 172);
     color: white;
-    flex: 0 0 280px;
+    flex: 1 0 auto;
     padding-left: 20px;
     padding-top: 20px;
+    min-width: 270px;
+    max-width: 280px;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -27,7 +38,7 @@ nav {
     padding-bottom: 25px;
 }
 
-.aside > * > div {
+.nav-wrapper > * > div {
     display: flex;
     gap: 5%;
     font-size: 12px;
@@ -187,18 +198,21 @@ header {
 
 .content {
     background-color: rgb(211, 224, 224);
-    flex: 1 0 auto;
-    height: 1vh;
+    flex: 1 1 auto;
     display: grid;
+    overflow: auto;
     grid-template: 1fr 1fr / 3fr 1fr;
     grid-template-areas: 
     "projects announcements"
     "projects trending";
+    height: 1px;
+
 }
 
 .projects-header-wrap {
     display: grid;
-    overflow: auto;
+    /* overflow: auto; */
+    min-width: 350px;
 }
 
 .projects {
@@ -211,10 +225,10 @@ header {
     padding-bottom: 100px;
 }
 
-.projects-header-wrap::-webkit-scrollbar {
+.content::-webkit-scrollbar {
     display: none;
 }
-.projects-header-wrap {
+.content {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
@@ -262,6 +276,7 @@ header {
 .announcements-header-wrap > h2 {
     margin: 25px 0px 10px 15px;
     font-size: 20px;
+
 }
 
 
