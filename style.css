@@ -314,7 +314,7 @@ header {
 .trending-card {
     background-color: white;
     width: 300px;
-    height: 200px;
+    height: 300px;
     border-radius: 7px;
     margin: 0px 20px 0px 5px;
     display: grid;
@@ -323,12 +323,20 @@ header {
     font-size: 12px;
     padding: 20px;
 }
+
+.trending-user div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .trending-user h5 {
     font-size: 15px;
-    margin: 10px 0 5px 10px;
+    margin: 0px 0 5px 10px;
 }
 .trending-card p {
     margin: 0 0 0 10px;
+    color: #807b7b;
+    font-size: 16px;
 }
 
 .trending-user {
